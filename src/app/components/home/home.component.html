@@ -1,0 +1,93 @@
+<div class="container">
+    <button class="btn" (click)="abrirMenu()">
+        <svg width="25" height="25" fill="#000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <circle cx="3" cy="2.7" r="2" />
+            <circle cx="12" cy="2.7" r="2" />
+            <circle cx="21" cy="2.7" r="2" />
+            <circle cx="3" cy="12" r="2" />
+            <circle cx="12" cy="12" r="2" />
+            <circle cx="21" cy="12" r="2" />
+            <circle cx="3" cy="21.3" r="2" />
+            <circle cx="12" cy="21.3" r="2" />
+            <circle cx="21" cy="21.3" r="2" />
+        </svg>
+    </button>
+</div>
+
+
+@if (mostrarMenu) {
+    <div class="appContainer">
+        <div class="scroll-container" style="background-color: #E3EDF7; border-radius: 8px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); padding: 16px; overflow-y: auto; width: 310px; border: 1px solid #e0e0e0; overflow-y: scroll; max-height: 405px;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="http://localhost:56167/Júcar" target="_blank">
+                <img src="CHJ.jpg" alt="Icono CHJ" width="80" height="80" style="margin-bottom: 8px; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)">
+            </a>
+            <span style="font-size: 14px; color: #333;">CHJ</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="http://localhost:56170/aemet/main" target="_blank">
+                <img src="aemet.png" alt="Icono AEMET" width="80" height="80" style="margin-bottom: 8px; background-color: white; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)">
+            </a>
+            <span style="font-size: 14px; color: #333;">AEMET</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://hipermercode.com/soluciones-digitalizacion-pymes/servicio-paises/" target="_blank">
+                <img src="paises.png" alt="Icono Paises" width="80" height="80" style="margin-bottom: 8px; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)">
+            </a>
+            <span style="font-size: 14px; color: #333;">Países</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://hipermercode.com/soluciones-digitalizacion-pymes/servicio-festivos/" target="_blank">
+                <img src="festivos.jpg" alt="Icono Festivos" width="80" height="80" style="margin-bottom: 8px; background-color: white; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)">
+            </a>
+            <span style="font-size: 14px; color: #333;">Festivos</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://hipermercode.com/soluciones-digitalizacion-pymes/servicio-fisco-check/" target="_blank">
+                <img src="identificacionFiscal.png" alt="Icono FiscoCheck" width="80" height="80" style="margin-bottom: 8px; background-color: white; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)">
+            </a>
+            <span style="font-size: 14px; color: #333;">FiscoCheck</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://hipermercode.com/soluciones-digitalizacion-pymes/servicios-limpieza-kelly-power-apartamentos-turisticos/" target="_blank">
+                <img src="apartamento.png" alt="Icono Apartamentos" width="80" height="80" style="margin-bottom: 8px; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)">
+            </a>
+            <span style="font-size: 14px; color: #333; text-align: center;">Apartamentos Turísticos</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://hipermercode.com/soluciones-digitalizacion-pymes/codigos-postales-mundo/" target="_blank">
+                <img src="CPW.png" alt="Icono CP" width="80" height="80" style="margin-bottom: 8px; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)">
+            </a>
+            <span style="font-size: 14px; color: #333; text-align: center;">Códigos Postales Mundo</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://hipermercode.com/soluciones-digitalizacion-pymes/plan-general-contable/" target="_blank">
+                <img src="pgc.png" alt="Icono PGC" width="80" height="80" style="margin-bottom: 8px; background-color: white; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)">
+            </a>
+            <span style="font-size: 14px; color: #333; text-align: center;">Plan General Contable</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://hipermercode.com/soluciones-digitalizacion-pymes/crea-descarga-gratis-qr/#demo" target="_blank">
+              <img src="MQR.jpg" alt="Icono MQR" width="80" height="80" style="margin-bottom: 8px; background-color: white; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)">
+            </a>
+            <span style="font-size: 14px; color: #333;">MasterQR</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://hipermercode.com/soluciones-digitalizacion-pymes/servicio-iban/" target="_blank">
+                <img src="IBAN.png" alt="Icono IBAN" width="80" height="80" style="margin-bottom: 8px; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)">
+            </a>
+            <span style="font-size: 14px; color: #333;">IBAN</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <a href="https://hipermercode.com/soluciones-digitalizacion-pymes/servicio-codigos-postales/" target="_blank">
+              <img src="cp.jpg" alt="Icono CPES" width="80" height="80" style="margin-bottom: 8px; background-color: white; border-radius: 50%; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)">
+            </a>
+            <div style="display: flex; align-items: center; gap: 5px;">
+                <span style="font-size: 14px; color: #333; text-align: center;">Códigos Postales España</span>
+            </div>
+         </div>        
+        </div>
+      </div>
+    </div>
+}
